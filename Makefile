@@ -1,5 +1,5 @@
 test:
-	go test -v ./...
+	go test -v -race -cover -coverprofile=cover.out ./...
 
 lint:
 	golangci-lint run
